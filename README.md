@@ -2,7 +2,9 @@
 
 Prerequisites:
   Node v 7.8.0
+  
   Ganache UI/CLI
+  
   Mocha
   truffle
   
