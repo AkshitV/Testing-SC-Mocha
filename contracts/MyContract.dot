@@ -1,0 +1,30 @@
+strict digraph {
+  constructor
+  mint
+  setCrowdsaleStage
+  getCrowdsaleStage [color=yellow]
+  transfer
+  transferFrom
+  calculateBonus [color=yellow]
+  getAccountDetails [color=yellow]
+  fallback [color=brown]
+  Transfer
+  withdrawEther [color=purple]
+  refundEther [color=purple]
+  endCurrentRoundSale
+  Mint
+  finishMinting
+  MintFinished
+  sendBounty
+  setDate
+  constructor -> mint
+  fallback -> Transfer
+  fallback -> mint
+  withdrawEther -> transfer
+  refundEther -> transfer
+  mint -> Mint
+  mint -> Transfer
+  finishMinting -> MintFinished
+  sendBounty -> Transfer
+}
+
